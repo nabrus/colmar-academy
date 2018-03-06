@@ -58,7 +58,7 @@ nav {
   #BANNER
 ---------------------------*/
 
-.banner-img img {
+.lg-media img {
   max-width: 100%;
 }
 
@@ -77,4 +77,28 @@ nav {
   width: 100%;
   padding: .5rem 0;
   border-radius: 6px;
+}
+
+
+
+
+
+/*---------------------------
+  #CAMPUS-INFO
+---------------------------*/
+
+.campus-info__img img {
+  max-width: 100%;
+}
+
+
+
+
+
+/*---------------------------
+  #THESIS
+---------------------------*/
+
+.lg-media video {
+  max-width: 100%;
 }
