@@ -20,7 +20,11 @@ html {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 
@@ -63,22 +67,25 @@ header nav ul {
 }
 
 .banner-info {
-  margin: 2rem 1rem;
+  padding: 2rem 1rem;
   max-width: 375px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .banner-info p {
   margin-top: 2rem;
   font-size: 1.5rem;
+  line-height: 1.7rem;
 }
 
-.banner-info button {
-  font-size: 1rem;
+.banner-btn {
+  display: block;
+  font-size: 1.2rem;
   margin-top: 1.5rem;
   width: 100%;
   padding: .5rem 0;
   border-radius: 6px;
+  text-align: center;
 }
 
 
@@ -89,9 +96,57 @@ header nav ul {
   #CAMPUS-INFO
 ---------------------------*/
 
+.campus-info {
+  margin: 1rem 1rem 0 1rem;
+}
+
 .campus-info__img img {
   max-width: 100%;
 }
+
+.campus-info__details {
+  margin: 2rem 0;
+  padding: 0 3rem 0 1rem;
+}
+
+.campus-info__details h2, p {
+  padding-bottom: 0.5rem;
+}
+
+.campus-info__details p {
+  line-height: 1.3rem;
+}
+
+.campus-info__details a {
+  text-decoration: none;
+}
+
+.campus-info__img .desktop {
+  display: none;
+}
+
+
+
+
+
+/*---------------------------
+  #CAMPUS-COURSES
+---------------------------*/
+
+.courses h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.courses-box {
+  margin: 2rem 1rem;
+}
+
+.course-box {
+  padding: 2rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
 
 
 
@@ -101,6 +156,25 @@ header nav ul {
   #THESIS
 ---------------------------*/
 
+.thesis h1 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
 .lg-media video {
   max-width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+
+
+
+
+/*---------------------------
+  #FOOTER
+---------------------------*/
+
+footer {
+  font-size: 0.75rem;
+  padding: 1rem;
 }
