@@ -145,6 +145,11 @@ header nav ul {
 .course-box {
   padding: 2rem 1rem;
   margin-bottom: 0.5rem;
+  border-radius: 6px;
+}
+
+.course-box:active {
+  background-color: red;
 }
 
 
