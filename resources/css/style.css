@@ -42,7 +42,7 @@ nav {
   width: 100%;
 }
 
-.navigation {
+header nav ul {
   align-items: center;
 }
 
@@ -64,6 +64,8 @@ nav {
 
 .banner-info {
   margin: 2rem 1rem;
+  max-width: 375px;
+  margin: 0 auto;
 }
 
 .banner-info p {
