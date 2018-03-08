@@ -62,7 +62,15 @@ header nav ul {
   display: inline-block;
 }
 
+@media only screen and (min-width: 720px) {
+  nav {
+    height: 5rem;
+  }
 
+  .mobile li a img {
+    height: 45px;
+  }
+}
 
 
 
