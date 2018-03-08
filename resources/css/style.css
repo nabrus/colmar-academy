@@ -31,6 +31,11 @@ h3 {
   font-size: 1.2rem;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 
@@ -65,9 +70,10 @@ header nav ul {
   #BANNER
 ---------------------------*/
 
-.lg-media img {
-  max-width: 100%;
-}
+/* .lg-media img {
+  width: 100%;
+  height: auto;
+} */
 
 .banner-info {
   padding: 2rem 1rem;
@@ -90,6 +96,18 @@ header nav ul {
   text-align: center;
 }
 
+@media only screen and (min-width: 720px) {
+
+  .banner-info {
+    max-width: 65%;
+  }
+
+  .banner-btn {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+}
+
 
 
 
@@ -102,9 +120,9 @@ header nav ul {
   margin: 1rem 1rem 0 1rem;
 }
 
-.campus-info__img img {
+/* .campus-info__img img {
   max-width: 100%;
-}
+} */
 
 .campus-info__details {
   margin: 2rem 0;
@@ -163,7 +181,7 @@ header nav ul {
   }
 }
 
-@media only screen and (min-width: 720px) and (max-width: 800px) {
+@media only screen and (min-width: 720px) {
 
   .campus-info {
     margin: 0;
@@ -175,8 +193,29 @@ header nav ul {
     display: block;
   }
 
+  .campus-info__quote {
+    padding: 2rem 1rem;
+  }
+
+  .campus-info__quote p {
+    padding: 2rem 0;
+    line-height: 1.3rem;
+  }
+
+  .campus-info__quote p, span {
+    font-size: 1.3rem;
+  }
+
   .campus-info__wrapper {
     margin: 0 5rem;
+  }
+
+  .campus-info__details h2 {
+    font-size: 2rem;
+  }
+
+  .campus-info__details p, a {
+    font-size: 1.3rem;
   }
 }
 
@@ -202,6 +241,60 @@ header nav ul {
 
 .course-box__img, .course-box__info {
   display: none;
+}
+
+@media only screen and (min-width: 720px) {
+
+  .course-box__img, .course-box__info {
+    display: block;
+  }
+
+  .courses-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 2rem 0 0.5rem 0;
+  }
+
+  .course-box {
+    padding: 0;
+    margin: 0 1.5rem 1.5rem 0;
+    width: 300px;
+    height: 324px;
+  }
+
+  .course-box:nth-of-type(2n + 2) {
+    margin: 0;
+  }
+
+  /* .course-box__img {
+    height: 145px;
+    overflow: hidden;
+  } */
+
+  /* .course-box__img img {
+    max-height: 100%;
+    width: 100%;
+  } */
+
+  .course-box h2 {
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  .course-box__info {
+    padding-left: 1rem;
+  }
+
+  .course-box__info h3 {
+    padding: 0.5rem 0;
+  }
+
+  .course-box__info p {
+    line-height: 1.3;
+  }
+
+
 }
 
 
