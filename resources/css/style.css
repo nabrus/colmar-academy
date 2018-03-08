@@ -27,6 +27,9 @@ h2 {
   font-size: 1.5rem;
 }
 
+h3 {
+  font-size: 1.2rem;
+}
 
 
 
@@ -84,7 +87,6 @@ header nav ul {
   margin-top: 1.5rem;
   width: 100%;
   padding: .5rem 0;
-  border-radius: 6px;
   text-align: center;
 }
 
@@ -125,7 +127,58 @@ header nav ul {
   display: none;
 }
 
+ .campus-info__banner {
+  display: none
+}
 
+@media only screen and (min-width: 600px) {
+
+  .campus-info__img .mobile {
+    display: none;
+  }
+
+  .campus-info__img {
+    width: 35%;
+  }
+
+  .campus-info__img .desktop {
+    display: block;
+  }
+
+  .campus-info__img img {
+    width: 85%;
+    height: auto;
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  .campus-info__box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .campus-info__details {
+    width: 65%;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 800px) {
+
+  .campus-info {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .campus-info__banner {
+    display: block;
+  }
+
+  .campus-info__wrapper {
+    margin: 0 5rem;
+  }
+}
 
 
 
@@ -138,18 +191,17 @@ header nav ul {
   padding-top: 2rem;
 }
 
-.courses-box {
+.courses-wrapper {
   margin: 2rem 1rem;
 }
 
 .course-box {
   padding: 2rem 1rem;
   margin-bottom: 0.5rem;
-  border-radius: 6px;
 }
 
-.course-box:active {
-  background-color: red;
+.course-box__img, .course-box__info {
+  display: none;
 }
 
 
