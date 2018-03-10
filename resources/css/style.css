@@ -44,6 +44,7 @@ video {
 
 
 
+
 /*---------------------------
   #HEADER
 ---------------------------*/
@@ -83,11 +84,6 @@ header nav ul {
   #BANNER
 ---------------------------*/
 
-/* .lg-media img {
-  width: 100%;
-  height: auto;
-} */
-
 .banner-info {
   padding: 2rem 1rem;
   max-width: 375px;
@@ -121,6 +117,23 @@ header nav ul {
   }
 }
 
+@media only screen and (min-width: 805px) {
+
+  .banner {
+    display: flex;
+    align-items: center;
+  }
+
+  .lg-media {
+    padding: 2rem 1.5rem;
+    max-width: 60%;
+  }
+
+  .banner-btn {
+    padding: .5rem 0;
+    font-size: 1.3rem;
+  }
+}
 
 
 
@@ -132,10 +145,6 @@ header nav ul {
 .campus {
   margin: 1rem 1rem 0 1rem;
 }
-
-/* .campus-info__img img {
-  max-width: 100%;
-} */
 
 .campus-info__details {
   margin: 2rem 0;
@@ -232,6 +241,41 @@ header nav ul {
     font-size: 1.3rem;
   }
 }
+
+@media only screen and (min-width: 805px) {
+
+  .campus {
+    flex-direction: row;
+  }
+
+  .section-poster {
+    max-width: 60%;
+  }
+
+  .section-poster__media {
+    padding: 2rem 1.5rem;
+  }
+
+  .campus .section-poster__text {
+    padding: 0 1.5rem 2rem 1.5rem;
+  }
+
+  .campus-info__wrapper {
+    margin: 0;
+    max-width: 40%;
+  }
+
+  .campus-info__details h2, p, a {
+    font-size: 1rem;
+  }
+
+  .campus-info__img  {
+    width: 35%;
+  }
+
+}
+
+
 
 
 
