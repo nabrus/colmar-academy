@@ -31,10 +31,15 @@ h3 {
   font-size: 1.2rem;
 }
 
-img {
+img,
+video {
   max-width: 100%;
   height: auto;
 }
+
+
+
+
 
 
 
@@ -124,7 +129,7 @@ header nav ul {
   #CAMPUS-INFO
 ---------------------------*/
 
-.campus-info {
+.campus {
   margin: 1rem 1rem 0 1rem;
 }
 
@@ -153,7 +158,7 @@ header nav ul {
   display: none;
 }
 
- .campus-info__banner {
+ .campus .section-poster {
   display: none
 }
 
@@ -191,26 +196,27 @@ header nav ul {
 
 @media only screen and (min-width: 720px) {
 
-  .campus-info {
+  .campus {
     margin: 0;
     display: flex;
     flex-direction: column;
   }
 
-  .campus-info__banner {
+  .campus .section-poster {
     display: block;
   }
 
-  .campus-info__quote {
+  .section-poster__text {
     padding: 2rem 1rem;
   }
 
-  .campus-info__quote p {
+  .section-poster__text p {
     padding: 2rem 0;
     line-height: 1.3rem;
   }
 
-  .campus-info__quote p, span {
+  .section-poster__text p,
+  .section-poster__text span {
     font-size: 1.3rem;
   }
 
@@ -276,16 +282,6 @@ header nav ul {
     margin: 0;
   }
 
-  /* .course-box__img {
-    height: 145px;
-    overflow: hidden;
-  } */
-
-  /* .course-box__img img {
-    max-height: 100%;
-    width: 100%;
-  } */
-
   .course-box h2 {
     padding: 1rem 0 1rem 1rem;
   }
@@ -314,14 +310,24 @@ header nav ul {
   #THESIS
 ---------------------------*/
 
-.thesis h1 {
+h1.thesis-title {
   text-align: center;
   padding: 2rem 0;
 }
 
-.lg-media video {
-  max-width: 100%;
+.thesis {
   padding-bottom: 1.5rem;
+}
+
+.thesis .section-poster__text {
+  display: none;
+}
+
+@media only screen and (min-width: 720px) {
+
+  .thesis .section-poster__text {
+    display: block;
+  }
 }
 
 
@@ -335,4 +341,22 @@ header nav ul {
 footer {
   font-size: 0.75rem;
   padding: 1rem;
+}
+
+footer span {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+
+  /* Tablet-portrait */
+
+  footer span {
+    display: inline-block;
+    float: right;
+  }
+
+  .footer--space {
+    padding-left: .5rem;
+  }
 }
