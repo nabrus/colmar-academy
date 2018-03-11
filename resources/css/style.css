@@ -37,6 +37,10 @@ video {
   height: auto;
 }
 
+.site-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 
 
@@ -48,6 +52,10 @@ video {
 /*---------------------------
   #HEADER
 ---------------------------*/
+
+header {
+
+}
 
 nav {
   height: 4rem;
@@ -76,6 +84,17 @@ header nav ul {
   .mobile li a img {
     height: 45px;
   }
+}
+
+@media only screen and (min-width: 805px) {
+
+  nav {
+    height: 4rem;
+  }
+
+  /* .mobile li a img {
+    height: inherit;
+  } */
 }
 
 
@@ -285,7 +304,7 @@ header nav ul {
 
 .courses h1 {
   text-align: center;
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 .courses-wrapper {
@@ -307,23 +326,44 @@ header nav ul {
     display: block;
   }
 
-  .courses-wrapper {
+  /* .courses-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 2rem 0 0.5rem 0;
-  }
+  } previous setting*/
 
-  .course-box {
+  /* .course-box {
     padding: 0;
     margin: 0 1.5rem 1.5rem 0;
     width: 300px;
     height: 324px;
+  } previous setting*/
+
+  /* .course-box:nth-of-type(2n + 2) {
+    margin: 0;
+  } previous setting*/
+
+  .courses {
+    margin-bottom: 2rem;
   }
 
-  .course-box:nth-of-type(2n + 2) {
+  .courses-wrapper {
+    max-width: 632px;
+    height: 1046px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .course-box {
+    padding: 0;
     margin: 0;
+    width: 300px;
+    height: 324px;
   }
 
   .course-box h2 {
@@ -332,6 +372,7 @@ header nav ul {
 
   .course-box__info {
     padding-left: 1rem;
+    width: 85%;
   }
 
   .course-box__info h3 {
@@ -345,6 +386,43 @@ header nav ul {
 
 }
 
+@media only screen and (min-width: 805px) {
+
+  /* .courses-wrapper {
+    max-width: 950px;
+  } */
+
+  /* .course-box:nth-of-type(3n + 3) {
+    margin: 0;
+  } */
+
+  .course-box {
+    /* margin: 0; */
+  }
+}
+
+@media only screen and (min-width: 1060px) {
+
+  /* .courses {
+    margin-bottom: 2rem;
+  } */
+
+  .courses-wrapper {
+    max-width: 1056px;
+    height: 748px;
+    /* justify-content: space-between;
+    align-content: space-between;
+    padding: 0; */
+  }
+
+  .course-box {
+    /* margin: 2rem 0; */
+    width: 334px;
+    height: 358px;
+    /* margin: 0; */
+  }
+}
+
 
 
 
@@ -356,7 +434,7 @@ header nav ul {
 
 h1.thesis-title {
   text-align: center;
-  padding: 2rem 0;
+  padding: 1.5rem 0 2rem 0;
 }
 
 .thesis {
@@ -384,7 +462,10 @@ h1.thesis-title {
 
 footer {
   font-size: 0.75rem;
-  padding: 1rem;
+}
+
+footer>h4 {
+  padding: 1rem 1.5rem;
 }
 
 footer span {
