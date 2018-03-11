@@ -20,15 +20,15 @@ html {
 }
 
 h1 {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
 }
 
 h2 {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 h3 {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
 img,
@@ -81,11 +81,10 @@ header nav ul {
   align-items: center;
 }
 
-.mobile-nav ul li {
-  display: inline-block;
-}
-
 @media only screen and (min-width: 720px) {
+
+  /*  Larger nav bar and icons
+  for tablets in portrait  */
 
   nav {
     height: 5rem;
@@ -98,6 +97,7 @@ header nav ul {
 
 @media only screen and (min-width: 805px) {
 
+  /*  Remove mobile, insert desktop; navigation  */
 
   nav {
     height: 4rem;
@@ -113,14 +113,13 @@ header nav ul {
     display: flex;
   }
 
-  .logo {
-    height: 4rem;
-    flex: 1;
+  .desktop-nav li a {
+    display: flex;
+    align-items: center;
   }
 
-  .logo img {
-    position: relative;
-    top: .70rem;
+  .logo {
+    flex: 1;
   }
 
   .desktop-nav--spaceing {
@@ -130,7 +129,7 @@ header nav ul {
 
 @media only screen and (min-width: 1200px) {
 
-  /*  Fixed nav bar for desktop  */
+  /*  Always on-screen nav bar for desktop  */
 
   body {
     position: relative;
@@ -175,6 +174,9 @@ header nav ul {
 
 @media only screen and (min-width: 720px) {
 
+  /*  Increase button size for
+  tablets in portrait  */
+
   .banner-info {
     max-width: 65%;
   }
@@ -187,12 +189,19 @@ header nav ul {
 
 @media only screen and (min-width: 805px) {
 
+  /*  Larger screen layout  */
+
   .banner {
     display: flex;
     align-items: center;
   }
 
-  .lg-media {
+  .banner-info {
+    max-width: 375px;
+    margin: 0;
+  }
+
+  .banner-img {
     padding: 2rem 1.5rem;
     max-width: 60%;
   }
@@ -214,20 +223,16 @@ header nav ul {
   margin: 1rem 1rem 0 1rem;
 }
 
-.campus-info__details {
+.section-info__details {
   margin: 2rem 0;
   padding: 0 3rem 0 1rem;
 }
 
-/* .campus-info__details h2, p {
-  padding-bottom: 0.5rem;
-} fix!!!!! */
-
-.campus-info__details p {
+.section-info__details p {
   line-height: 1.3rem;
-}
+} /*universal*/
 
-.campus-info__img .desktop {
+.section-info__img .desktop {
   display: none;
 }
 
@@ -237,37 +242,40 @@ header nav ul {
 
 @media only screen and (min-width: 600px) {
 
-  .campus-info__img .mobile {
+  /*  Larger screen layout for
+  campus info sec  */
+
+  .section-info__img .mobile {
     display: none;
   }
 
-  .campus-info__img {
+  .section-info__img {
     width: 35%;
   }
 
-  .campus-info__img .desktop {
+  .section-info__img .desktop {
     display: block;
   }
 
-  .campus-info__img img {
-    width: 85%;
+  .section-info__img img {
     height: auto;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem;
   }
 
-  .campus-info__box {
-    width: 100%;
+  .section-info__box {
     display: flex;
     align-items: center;
   }
 
-  .campus-info__details {
+  .section-info__details {
     width: 65%;
     padding-left: 0;
   }
 }
 
 @media only screen and (min-width: 720px) {
+
+  /*  Display section poster  */
 
   .campus {
     margin: 0;
@@ -284,29 +292,27 @@ header nav ul {
   }
 
   .section-poster__text p {
-    padding: 2rem 0;
-    line-height: 1.3rem;
+    /* padding: 2rem 0; */
+    line-height: 1.3rem; /*univeral line height*/
   }
 
   .section-poster__text p,
   .section-poster__text span {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
   }
 
-  .campus-info__wrapper {
+  .section-info__wrapper {
     margin: 0 5rem;
   }
 
-  .campus-info__details h2 {
-    font-size: 2rem;
+  .section-info__details h2 {
+    /* font-size: 2rem; */
   }
-
-  /* .campus-info__details p, a {
-    font-size: 1.3rem;
-  }  fix this !!!!! */
 }
 
 @media only screen and (min-width: 805px) {
+
+  /*  Desktop layout for section poster/info  */
 
   .campus {
     flex-direction: row;
@@ -324,16 +330,12 @@ header nav ul {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
-  .campus-info__wrapper {
-    margin: 0;
+  .campus .section-info__wrapper {
+    margin: 1rem 0 0 0;
     max-width: 40%;
   }
 
-  /* .campus-info__details h2, p, a {
-    font-size: 1rem;
-  }  fix this!!!!!!*/
-
-  .campus-info__img  {
+  .section-info__img  {
     width: 35%;
   }
 
@@ -361,13 +363,18 @@ header nav ul {
   margin-bottom: 0.5rem;
 }
 
-.course-box__img, .course-box__info {
+.course-box__img,
+.course-box__info {
   display: none;
 }
 
 @media only screen and (min-width: 720px) {
 
-  .course-box__img, .course-box__info {
+  /*  Change from course labels to a
+  2 x 3 grid of couse cards  */
+
+  .course-box__img,
+  .course-box__info {
     display: block;
   }
 
@@ -407,10 +414,12 @@ header nav ul {
 
   .course-box__info p {
     line-height: 1.3;
-  }
+  } /* universal line-height */
 }
 
 @media only screen and (min-width: 968px) {
+
+  /*  Course card grid 3 x 2 change  */
 
   .courses-wrapper {
     max-width: 964px;
@@ -419,6 +428,8 @@ header nav ul {
 }
 
 @media only screen and (min-width: 1200px) {
+
+  /*  Desktop layout  */
 
   .courses-wrapper {
     max-width: 1056px;
@@ -453,14 +464,38 @@ h1.thesis-title {
   padding-bottom: 1.5rem;
 }
 
-.thesis .section-poster__text {
+.thesis .section-poster__text,
+.thesis .section-info__box {
   display: none;
 }
 
 @media only screen and (min-width: 720px) {
 
+  /*  Display section poster/info  */
+
   .thesis .section-poster__text {
     display: block;
+  }
+
+  .thesis .section-info__box {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 805px) {
+
+  /*  Desktop layout  */
+
+  .thesis {
+    display: flex;
+  }
+
+  .thesis video {
+    padding: 0 1.5rem;
+  }
+
+  .thesis .section-info__wrapper {
+    margin: 0;
   }
 }
 
@@ -474,6 +509,7 @@ h1.thesis-title {
 
 footer {
   font-size: 0.75rem;
+  background-color: white;
 }
 
 footer>h4 {
@@ -486,7 +522,7 @@ footer span {
 
 @media only screen and (min-width: 600px) {
 
-  /* Tablet-portrait */
+  /*  Tablet-portrait layout  */
 
   footer span {
     display: inline-block;
@@ -495,5 +531,14 @@ footer span {
 
   .footer--space {
     padding-left: .5rem;
+  }
+}
+
+@media only screen and (min-width: 968px) {
+
+  /*  Desktop layout  */
+
+  footer {
+    margin-bottom: 2.5rem;
   }
 }
