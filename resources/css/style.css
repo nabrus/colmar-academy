@@ -37,6 +37,11 @@ video {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .site-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -57,12 +62,16 @@ header {
 
 }
 
+.desktop-nav {
+  display: none;
+}
+
 nav {
   height: 4rem;
   display: flex;
 }
 
-.mobile {
+.mobile-nav {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -72,29 +81,69 @@ header nav ul {
   align-items: center;
 }
 
-.mobile ul li {
+.mobile-nav ul li {
   display: inline-block;
 }
 
 @media only screen and (min-width: 720px) {
+
   nav {
     height: 5rem;
   }
 
-  .mobile li a img {
+  .mobile-nav li a img {
     height: 45px;
   }
 }
 
 @media only screen and (min-width: 805px) {
 
+
   nav {
     height: 4rem;
+    padding: 0 1.5rem;
   }
 
-  /* .mobile li a img {
-    height: inherit;
-  } */
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    width: 100%;
+    display: flex;
+  }
+
+  .logo {
+    height: 4rem;
+    flex: 1;
+  }
+
+  .logo img {
+    position: relative;
+    top: .70rem;
+  }
+
+  .desktop-nav--spaceing {
+    padding-left:  1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  /*  Fixed nav bar for desktop  */
+
+  body {
+    position: relative;
+    top: 4rem;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
 }
 
 
@@ -170,16 +219,12 @@ header nav ul {
   padding: 0 3rem 0 1rem;
 }
 
-.campus-info__details h2, p {
+/* .campus-info__details h2, p {
   padding-bottom: 0.5rem;
-}
+} fix!!!!! */
 
 .campus-info__details p {
   line-height: 1.3rem;
-}
-
-.campus-info__details a {
-  text-decoration: none;
 }
 
 .campus-info__img .desktop {
@@ -256,9 +301,9 @@ header nav ul {
     font-size: 2rem;
   }
 
-  .campus-info__details p, a {
+  /* .campus-info__details p, a {
     font-size: 1.3rem;
-  }
+  }  fix this !!!!! */
 }
 
 @media only screen and (min-width: 805px) {
@@ -284,9 +329,9 @@ header nav ul {
     max-width: 40%;
   }
 
-  .campus-info__details h2, p, a {
+  /* .campus-info__details h2, p, a {
     font-size: 1rem;
-  }
+  }  fix this!!!!!!*/
 
   .campus-info__img  {
     width: 35%;
@@ -326,25 +371,6 @@ header nav ul {
     display: block;
   }
 
-  /* .courses-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 2rem 0 0.5rem 0;
-  } previous setting*/
-
-  /* .course-box {
-    padding: 0;
-    margin: 0 1.5rem 1.5rem 0;
-    width: 300px;
-    height: 324px;
-  } previous setting*/
-
-  /* .course-box:nth-of-type(2n + 2) {
-    margin: 0;
-  } previous setting*/
-
   .courses {
     margin-bottom: 2rem;
   }
@@ -372,7 +398,7 @@ header nav ul {
 
   .course-box__info {
     padding-left: 1rem;
-    width: 85%;
+    width: 90%;
   }
 
   .course-box__info h3 {
@@ -382,44 +408,30 @@ header nav ul {
   .course-box__info p {
     line-height: 1.3;
   }
-
-
 }
 
-@media only screen and (min-width: 805px) {
+@media only screen and (min-width: 968px) {
 
-  /* .courses-wrapper {
-    max-width: 950px;
-  } */
-
-  /* .course-box:nth-of-type(3n + 3) {
-    margin: 0;
-  } */
-
-  .course-box {
-    /* margin: 0; */
+  .courses-wrapper {
+    max-width: 964px;
+    height: 670px;
   }
 }
 
-@media only screen and (min-width: 1060px) {
-
-  /* .courses {
-    margin-bottom: 2rem;
-  } */
+@media only screen and (min-width: 1200px) {
 
   .courses-wrapper {
     max-width: 1056px;
     height: 748px;
-    /* justify-content: space-between;
-    align-content: space-between;
-    padding: 0; */
   }
 
   .course-box {
-    /* margin: 2rem 0; */
-    width: 334px;
+    width: 331px;
     height: 358px;
-    /* margin: 0; */
+  }
+
+  .course-box__info p {
+    font-size: 1.2rem;
   }
 }
 
