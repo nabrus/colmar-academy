@@ -47,6 +47,66 @@ a {
   margin: 0 auto;
 }
 
+/*--  SECTION-INFO/POSTER  ==*/
+
+.section-info__details {
+  margin: 2rem 0;
+  padding: 0 3rem 0 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+
+  /*  section-info:
+   Large screen layout  */
+
+  .section-info__img {
+    width: 35%;
+  }
+
+  .section-info__img img {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .section-info__box {
+    display: flex;
+    align-items: center;
+  }
+
+  .section-info__details {
+    width: 65%;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+
+  /* section-poster/wrapper:
+   Tablet portrait layout */
+
+  .section-poster__text {
+    padding: 2rem 1rem;
+  }
+
+  .section-info__wrapper {
+    margin: 0 5rem;
+  }
+}
+
+@media only screen and (min-width: 805px) {
+
+  /*  section-poster/info:
+  Tablet landscape, desktop layout  */
+
+  .section-poster {
+    max-width: 60%;
+  }
+
+  .section-poster__media {
+    padding: 2rem 1.5rem;
+  }
+}
+
 
 
 
@@ -223,10 +283,10 @@ header nav ul {
   margin: 1rem 1rem 0 1rem;
 }
 
-.section-info__details {
+/* .section-info__details {
   margin: 2rem 0;
   padding: 0 3rem 0 1rem;
-}
+} */
 
 .section-info__details p {
   line-height: 1.3rem;
@@ -242,22 +302,21 @@ header nav ul {
 
 @media only screen and (min-width: 600px) {
 
-  /*  Larger screen layout for
-  campus info sec  */
+  /*  Larger screen layout  */
 
   .section-info__img .mobile {
     display: none;
   }
 
-  .section-info__img {
+  /*.section-info__img {
     width: 35%;
-  }
+  } universal*/
 
   .section-info__img .desktop {
     display: block;
   }
 
-  .section-info__img img {
+  /* .section-info__img img {
     height: auto;
     padding: 1rem;
   }
@@ -270,7 +329,7 @@ header nav ul {
   .section-info__details {
     width: 65%;
     padding-left: 0;
-  }
+  } */
 }
 
 @media only screen and (min-width: 720px) {
@@ -287,9 +346,9 @@ header nav ul {
     display: block;
   }
 
-  .section-poster__text {
+  /* .section-poster__text {
     padding: 2rem 1rem;
-  }
+  } */
 
   .section-poster__text p {
     /* padding: 2rem 0; */
@@ -301,9 +360,9 @@ header nav ul {
     /* font-size: 1.3rem; */
   }
 
-  .section-info__wrapper {
+  /* .section-info__wrapper {
     margin: 0 5rem;
-  }
+  } */
 
   .section-info__details h2 {
     /* font-size: 2rem; */
@@ -312,19 +371,19 @@ header nav ul {
 
 @media only screen and (min-width: 805px) {
 
-  /*  Desktop layout for section poster/info  */
+  /*  Tablet landscape, desktop layout  */
 
   .campus {
     flex-direction: row;
   }
 
-  .section-poster {
+  /* .section-poster {
     max-width: 60%;
   }
 
   .section-poster__media {
     padding: 2rem 1.5rem;
-  }
+  } */
 
   .campus .section-poster__text {
     padding: 0 1.5rem 2rem 1.5rem;
@@ -334,11 +393,6 @@ header nav ul {
     margin: 1rem 0 0 0;
     max-width: 40%;
   }
-
-  .section-info__img  {
-    width: 35%;
-  }
-
 }
 
 
@@ -490,7 +544,7 @@ h1.thesis-title {
     display: flex;
   }
 
-  .thesis video {
+  .thesis .section-poster__media {
     padding: 0 1.5rem;
   }
 
