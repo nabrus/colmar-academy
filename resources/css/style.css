@@ -13,6 +13,7 @@ background:rgba(0,0,0,.1);
 
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -61,11 +62,12 @@ a {
 
   .section-info__img {
     width: 35%;
+    margin: 1rem; /*bigger images**/
   }
 
   .section-info__img img {
     height: auto;
-    padding: 1rem;
+    /*padding: 1rem; delete if using marin above*/
   }
 
   .section-info__box {
@@ -283,11 +285,6 @@ header nav ul {
   margin: 1rem 1rem 0 1rem;
 }
 
-/* .section-info__details {
-  margin: 2rem 0;
-  padding: 0 3rem 0 1rem;
-} */
-
 .section-info__details p {
   line-height: 1.3rem;
 } /*universal*/
@@ -308,33 +305,14 @@ header nav ul {
     display: none;
   }
 
-  /*.section-info__img {
-    width: 35%;
-  } universal*/
-
   .section-info__img .desktop {
     display: block;
   }
-
-  /* .section-info__img img {
-    height: auto;
-    padding: 1rem;
-  }
-
-  .section-info__box {
-    display: flex;
-    align-items: center;
-  }
-
-  .section-info__details {
-    width: 65%;
-    padding-left: 0;
-  } */
 }
 
 @media only screen and (min-width: 720px) {
 
-  /*  Display section poster  */
+  /*  Display section-poster  */
 
   .campus {
     margin: 0;
@@ -346,19 +324,15 @@ header nav ul {
     display: block;
   }
 
-  /* .section-poster__text {
-    padding: 2rem 1rem;
-  } */
-
   .section-poster__text p {
     /* padding: 2rem 0; */
     line-height: 1.3rem; /*univeral line height*/
   }
 
-  .section-poster__text p,
+  /* .section-poster__text p,
   .section-poster__text span {
-    /* font-size: 1.3rem; */
-  }
+    font-size: 1.3rem;
+  } */
 
   /* .section-info__wrapper {
     margin: 0 5rem;
@@ -376,14 +350,6 @@ header nav ul {
   .campus {
     flex-direction: row;
   }
-
-  /* .section-poster {
-    max-width: 60%;
-  }
-
-  .section-poster__media {
-    padding: 2rem 1.5rem;
-  } */
 
   .campus .section-poster__text {
     padding: 0 1.5rem 2rem 1.5rem;
@@ -546,6 +512,10 @@ h1.thesis-title {
 
   .thesis .section-poster__media {
     padding: 0 1.5rem;
+  }
+
+  .thesis .section-poster__text {
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
   }
 
   .thesis .section-info__wrapper {
