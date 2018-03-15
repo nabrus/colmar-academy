@@ -72,7 +72,8 @@ html {
 body {
   font-family: 'Poppins';
   font-weight: 300;
-  color: rgb(132, 132, 132);
+  /* color: rgb(169, 172, 179); */
+  color: rgb(143, 143, 143);
 }
 
 *, *:before, *:after {
@@ -82,16 +83,16 @@ body {
 h1, h2 {
   font-family: 'Poppins';
   font-weight: 600;
-  color: rgb(74, 74, 74);
+  color: rgb(86, 89, 95);
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h2 {
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
 h3 {
@@ -112,6 +113,7 @@ video {
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 0.85rem;
 }
 
 .site-wrapper {
@@ -123,7 +125,7 @@ a {
 
 .section-info__details {
   margin: 2rem 0;
-  padding: 0 3rem 0 1rem;
+  /* padding: 0 3rem 0 1rem; */
 }
 
 .section-info__details p {
@@ -133,11 +135,16 @@ a {
 @media only screen and (min-width: 450px) {
 
   /*  section-info:
-  reduce size for better aesthetics  */
+  adjust image size, center text  */
 
   .section-info__box {
     max-width: 75%;
     margin: 0 auto;
+  }
+
+  .section-info__details {
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -163,9 +170,9 @@ a {
 
   .section-info__details {
     margin: 0;
-    width: 65%;
+    width: 70%;
     padding-left: 0;
-
+    text-align: left;
   }
 }
 
@@ -197,9 +204,18 @@ a {
     padding: 2rem 1.5rem;
   }
 
+  .section-info__wrapper {
+
+  }
+
   .section-info__box {
     max-width: 100%;
     margin: 0;
+  }
+
+  .section-info__details {
+    padding: 0;
+    max-width: 47%;
   }
 }
 
@@ -297,8 +313,6 @@ header nav ul {
     top: 0;
     width: 100%;
   }
-
-
 }
 
 
@@ -307,6 +321,10 @@ header nav ul {
   #BANNER
 ---------------------------*/
 
+.banner {
+  background-color: rgb(201, 206, 216);
+}
+
 .banner-info {
   padding: 2rem 1rem;
   max-width: 375px;
@@ -314,18 +332,27 @@ header nav ul {
 }
 
 .banner-info p {
+  color: rgb(86, 89, 98);
   margin-top: 2rem;
-  /* font-size: 1.5rem; */
+  font-size: 1.2rem;
   line-height: 1.7rem;
 }
 
 .banner-btn {
+  background-color: rgb(68, 84, 121);
+  color: white;
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 1.5rem;
   width: 100%;
   padding: .5rem 0;
   text-align: center;
+}
+
+@media only screen and (min-width: 450px) {
+  .banner-info {
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 720px) {
@@ -355,6 +382,7 @@ header nav ul {
   .banner-info {
     max-width: 375px;
     margin: 0;
+    text-align: left;
   }
 
   .banner-img {
@@ -445,13 +473,29 @@ header nav ul {
     flex-direction: row;
   }
 
+  .campus .section-poster {
+    border-right: 1px solid lightgrey;
+  }
+
   .campus .section-poster__text {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
+  .campus .section-poster__text p {
+    padding: 1.5rem 0 2rem 0;
+  }
+
+  .campus .section-poster__text span {
+    font-size: 0.77rem;
+  }
   .campus .section-info__wrapper {
     margin: 1rem 0 0 0;
     /* max-width: 40%; does nothing*/
+  }
+
+  .campus .section-info__box:nth-of-type(2) {
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
   }
 }
 
@@ -468,12 +512,11 @@ header nav ul {
 }
 
 .courses-wrapper {
-  /* margin: 2rem 1rem; */
-  max-width: 90%;
-  margin: 0 auto;
+  margin: 2rem 1rem;
 }
 
 .course-box {
+  background-color: rgb(201, 206, 216);
   padding: 2rem 1rem;
   margin-bottom: 0.5rem;
 }
@@ -481,12 +524,6 @@ header nav ul {
 .course-box__img,
 .course-box__info {
   display: none;
-}
-
-@media only screen and (min-width: 520px) {
-  .courses-wrapper {
-    max-width: 70%;
-  }
 }
 
 @media only screen and (min-width: 720px) {
@@ -500,12 +537,13 @@ header nav ul {
   }
 
   .courses {
-    margin-bottom: 2rem;
+    background-color: rgb(201, 206, 216);
+    padding-bottom: 2rem;
   }
 
   .courses-wrapper {
     max-width: 632px;
-    height: 1046px;
+    height: 994px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -514,10 +552,11 @@ header nav ul {
   }
 
   .course-box {
+    background-color: white;
     padding: 0;
     margin: 0;
     width: 300px;
-    height: 324px;
+    height: 310px;
   }
 
   .course-box h2 {
@@ -532,15 +571,12 @@ header nav ul {
   .course-box__info h3 {
     padding: 0.5rem 0;
   }
-
-  .course-box__info p {
-    line-height: 1.3;
-  } /* universal line-height */
 }
 
 @media only screen and (min-width: 968px) {
 
-  /*  Course card grid 3 x 2 change  */
+  /*  Course card grid 3 x 2 change,
+  desktop/tablet landscape layout  */
 
   .courses-wrapper {
     max-width: 964px;
@@ -550,7 +586,7 @@ header nav ul {
 
 @media only screen and (min-width: 1200px) {
 
-  /*  Desktop layout  */
+  /*  Large screen desktop layout  */
 
   .courses-wrapper {
     max-width: 1056px;
