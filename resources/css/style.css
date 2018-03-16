@@ -222,7 +222,7 @@ a {
   }
 
   .section-info__box {
-    max-width: 96%;
+    max-width: 100%;
     margin: 0;
   }
 
@@ -232,7 +232,7 @@ a {
 
   .section-info__details {
     padding: 0;
-    max-width: 60%;
+    width: 50%;
   }
 
   .section-info__details--mirror {
