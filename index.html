@@ -48,21 +48,23 @@
 
     <!--  MAIN CONTENT  -->
 
-    <main class="site-wrapper">
+    <main>
 
 
       <!--  BANNER  -->
 
       <section class="banner">
-        <div class="banner-img">
-          <img src="resources/images/banner.jpg" alt="three students studying outside">
-        </div>
-        <div class="banner-info">
-          <h1>Learn something new everyday</h1>
-          <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <a class="banner-btn" href="#">Start here</a>
+        <div class="banner-container site-wrapper">
+          <div class="banner-img">
+            <img src="resources/images/banner.jpg" alt="three students studying outside">
+          </div>
+          <div class="banner-info">
+            <h1>Learn something new everyday</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a class="banner-btn" href="#">Start here</a>
+          </div>
         </div>
       </section>
 
@@ -72,71 +74,76 @@
 
       <!--  CAMPUS INFO   -->
 
-      <section class="campus">
+      <div class="site-wrapper">
+        <section class="campus">
 
-        <!--  Campus Poster Section  -->
+          <!--  Campus Poster Section  -->
 
-        <div class="section-poster">
-          <div class="section-poster__media">
-            <img src="resources/images/information-main.jpg" alt="man reading on campus grounds">
-          </div>
-          <div class="section-poster__text">
-            <h1>It doesn't hurt to keep practicing</h1>
-            <p>
-              "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
-            </p>
-            <span>Emanuel, Sr Strategist at Hiring.com</span>
-          </div>
-        </div>
-
-        <!--  Campus Info Section  -->
-
-        <div class="section-info__wrapper">
-
-          <!--  Campus Info - ORIENTATION  -->
-
-          <div class="section-info__box">
-            <div class="section-info__img">
-              <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="birdseye of students walking">
-              <img class="desktop" src="resources/images/information-orientation.jpg" alt="birdseye of students walking">
+          <div class="section-poster">
+            <div class="section-poster__media">
+              <img src="resources/images/information-main.jpg" alt="man reading on campus grounds">
             </div>
-            <div class="section-info__details">
-              <h2>Orientation date</h2>
-              <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-              <a href="#">Read more</a>
+            <div class="section-poster__text">
+              <h1>It doesn't hurt to keep practicing</h1>
+              <p>
+                "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
+              </p>
+              <span>Emanuel, Sr Strategist at Hiring.com</span>
             </div>
           </div>
 
-          <!--  Campus Info - OUR CAMPUS -->
+          <!--  Campus Info Section  -->
 
-          <div class="section-info__box">
-            <div class="section-info__img">
-              <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="students inside one of the campus rooms">
-              <img class="desktop" src="resources/images/information-campus.jpg" alt="students inside one of the campus rooms">
+          <div class="section-info__wrapper">
+
+            <!--  Campus Info - ORIENTATION  -->
+
+            <div class="section-info__box">
+              <div class="section-info__img">
+                <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="birdseye of students walking">
+                <img class="desktop" src="resources/images/information-orientation.jpg" alt="birdseye of students walking">
+              </div>
+              <div class="section-info__details">
+                <h2>Orientation date</h2>
+                <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+                <a href="#">Read more</a>
+              </div>
             </div>
-            <div class="section-info__details">
-              <h2>Our campus</h2>
-              <p>Find which campus is close by you</p>
-              <a href="#">Read more</a>
+
+            <!--  Campus Info - OUR CAMPUS -->
+
+            <div class="section-info__box">
+              <div class="section-info__img section-info__img--mirror">
+                <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="students inside one of the campus rooms">
+                <img class="desktop" src="resources/images/information-campus.jpg" alt="students inside one of the campus rooms">
+              </div>
+              <div class="section-info__details section-info__details--mirror">
+                <h2>Our campus</h2>
+                <p>Find which campus is close by you</p>
+                <a href="#">Read more</a>
+              </div>
             </div>
+
+            <!--  Campus Info - LECTURE  -->
+
+            <div class="section-info__box">
+              <div class="section-info__img lecture">
+                <img class="mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="special guest profile picture">
+                <img class="desktop" src="resources/images/information-guest-lecture.jpg" alt="special guest profile picture">
+              </div>
+              <div class="section-info__details">
+                <h2>Special guest lecture</h2>
+                <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+
           </div>
 
-          <!--  Campus Info - LECTURE  -->
+        </section>
+      </div>
 
-          <div class="section-info__box">
-            <div class="section-info__img lecture">
-              <img class="mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="special guest profile picture">
-              <img class="desktop" src="resources/images/information-guest-lecture.jpg" alt="special guest profile picture">
-            </div>
-            <div class="section-info__details">
-              <h2>Special guest lecture</h2>
-              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-              <a href="#">Read more</a>
-            </div>
-          </div>
 
-        </div>
-      </section>
 
 
 
@@ -145,105 +152,107 @@
       <!--  CAMPUS COURSES  -->
 
       <section class="courses">
-        <h1>Start learning</h1>
-        <div class="courses-wrapper">
+        <div class="site-wrapper">
+          <h1>Start learning</h1>
+          <div class="courses-wrapper">
 
 
-          <!-- Software engineering -->
+            <!-- Software engineering -->
 
-          <div class="course-box">
-            <div class="course-box__img">
-              <img src="resources/images/course-software.jpg" alt="desk with two computer monitors">
+            <div class="course-box">
+              <div class="course-box__img">
+                <img src="resources/images/course-software.jpg" alt="desk with two computer monitors">
+              </div>
+              <h2>Software engineering</h2>
+              <div class="course-box__info">
+                <h3>COURSES</h3>
+                <p>
+                  Web Development, Mobile Development, iOT, APIs
+                </p>
+              </div>
             </div>
-            <h2>Software engineering</h2>
-            <div class="course-box__info">
-              <h3>COURSES</h3>
-              <p>
-                Web Development, Mobile Development, iOT, APIs
-              </p>
+
+
+            <!-- Computer art -->
+
+            <div class="course-box">
+              <div class="course-box__img">
+                <img src="resources/images/course-computer-art.jpg" alt="first-person view of smart phone">
+              </div>
+              <h2>Computer art</h2>
+              <div class="course-box__info">
+                <h3>COURSES</h3>
+                <p>
+                  Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation
+                </p>
+              </div>
             </div>
+
+
+            <!--  Design  -->
+
+            <div class="course-box">
+              <div class="course-box__img">
+                <img src="resources/images/course-design.jpg" alt="person with camera at waist level">
+              </div>
+              <h2>Design</h2>
+              <div class="course-box__info">
+                <h3>COURSES</h3>
+                <p>
+                  User Experience Design, User Research, Visual Design
+                </p>
+              </div>
+            </div>
+
+
+            <!--  Data  -->
+
+            <div class="course-box">
+              <div class="course-box__img">
+                <img src="resources/images/course-data.jpg" alt="open laptop">
+              </div>
+              <h2>Data</h2>
+              <div class="course-box__info">
+                <h3>COURSES</h3>
+                <p>
+                  Data Science, Big Data, SQL, Data Visualization
+                </p>
+              </div>
+            </div>
+
+
+            <!--  Business  -->
+
+            <div class="course-box">
+              <div class="course-box__img">
+                <img src="resources/images/course-business.jpg" alt="chess set">
+              </div>
+              <h2>Business</h2>
+              <div class="course-box__info">
+                <h3>COURSES</h3>
+                <p>
+                  Product Development, Business Development, Startup
+                </p>
+              </div>
+            </div>
+
+
+            <!--  Marketing  -->
+
+            <div class="course-box">
+              <div class="course-box__img">
+                <img src="resources/images/course-marketing.jpg" alt="close up of smart watch on wrist">
+              </div>
+              <h2>Marketing</h2>
+              <div class="course-box__info">
+                <h3>COURSES</h3>
+                <p>
+                  Analytics, Content Marketing, Mobile Marketing
+                </p>
+              </div>
+            </div>
+
           </div>
-
-
-          <!-- Computer art -->
-
-          <div class="course-box">
-            <div class="course-box__img">
-              <img src="resources/images/course-computer-art.jpg" alt="first-person view of smart phone">
-            </div>
-            <h2>Computer art</h2>
-            <div class="course-box__info">
-              <h3>COURSES</h3>
-              <p>
-                Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation
-              </p>
-            </div>
-          </div>
-
-
-          <!--  Design  -->
-
-          <div class="course-box">
-            <div class="course-box__img">
-              <img src="resources/images/course-design.jpg" alt="person with camera at waist level">
-            </div>
-            <h2>Design</h2>
-            <div class="course-box__info">
-              <h3>COURSES</h3>
-              <p>
-                User Experience Design, User Research, Visual Design
-              </p>
-            </div>
-          </div>
-
-
-          <!--  Data  -->
-
-          <div class="course-box">
-            <div class="course-box__img">
-              <img src="resources/images/course-data.jpg" alt="open laptop">
-            </div>
-            <h2>Data</h2>
-            <div class="course-box__info">
-              <h3>COURSES</h3>
-              <p>
-                Data Science, Big Data, SQL, Data Visualization
-              </p>
-            </div>
-          </div>
-
-
-          <!--  Business  -->
-
-          <div class="course-box">
-            <div class="course-box__img">
-              <img src="resources/images/course-business.jpg" alt="chess set">
-            </div>
-            <h2>Business</h2>
-            <div class="course-box__info">
-              <h3>COURSES</h3>
-              <p>
-                Product Development, Business Development, Startup
-              </p>
-            </div>
-          </div>
-
-
-          <!--  Marketing  -->
-
-          <div class="course-box">
-            <div class="course-box__img">
-              <img src="resources/images/course-marketing.jpg" alt="close up of smart watch on wrist">
-            </div>
-            <h2>Marketing</h2>
-            <div class="course-box__info">
-              <h3>COURSES</h3>
-              <p>
-                Analytics, Content Marketing, Mobile Marketing
-              </p>
-            </div>
-          </div>
-
         </div>
       </section>
 
@@ -253,55 +262,59 @@
 
       <!--  THESIS EXHIBITS  -->
 
-      <h1 class="thesis-title">Thesis exhibits</h1>
-      <section class="thesis">
+      <div class="site-wrapper">
+        <h1 class="thesis-title">Thesis exhibits</h1>
+        <section class="thesis">
 
-        <!--  Thesis Poster Section  -->
+          <!--  Thesis Poster Section  -->
 
-        <div class="section-poster">
-          <div class="section-poster__media">
-            <video src="resources/videos/thesis.mp4" autoplay loop>
-              Sorry! Your browser cannont display this video.
-            </video>
-          </div>
-          <div class="section-poster__text">
-            <h2>Reimagine urban</h2>
-            <p>
-              "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
-            </p>
-          </div>
-        </div>
-
-        <!--  Thesis Info Section  -->
-
-        <div class="section-info__wrapper">
-
-          <!--  Thesis - Fisma  -->
-
-          <div class="section-info__box">
-            <div class="section-info__img">
-              <img src="resources/images/thesis-fisma.jpg" alt="birdseye of person taking notes">
+          <div class="section-poster">
+            <div class="section-poster__media">
+              <video src="resources/videos/thesis.mp4" autoplay loop>
+                Sorry! Your browser cannont display this video.
+              </video>
             </div>
-            <div class="section-info__details">
-              <h2>Fisma: Design and Prototype</h2>
-              <p>Designer showcase of new prototype product</p>
+            <div class="section-poster__text">
+              <h2>Reimagine urban</h2>
+              <p>
+                "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
+              </p>
             </div>
           </div>
 
-          <!--  Thesis - Now and then  -->
+          <!--  Thesis Info Section  -->
 
-          <div class="section-info__box">
-            <div class="section-info__img">
-              <img src="resources/images/thesis-now-and-then.jpg" alt="NYC scape of Empire State building, One World Trade Center in distant background">
+          <div class="section-info__wrapper">
+
+            <!--  Thesis - Fisma  -->
+
+            <div class="section-info__box">
+              <div class="section-info__img section-info__img--mirror">
+                <img src="resources/images/thesis-fisma.jpg" alt="birdseye of person taking notes">
+              </div>
+              <div class="section-info__details section-info__details--mirror">
+                <h2>Fisma: Design and Prototype</h2>
+                <p>Designer showcase of new prototype product</p>
+              </div>
             </div>
-            <div class="section-info__details">
-              <h2>Now and then</h2>
-              <p>research study about New York</p>
+
+            <!--  Thesis - Now and then  -->
+
+            <div class="section-info__box">
+              <div class="section-info__img">
+                <img src="resources/images/thesis-now-and-then.jpg" alt="NYC scape of Empire State building, One World Trade Center in distant background">
+              </div>
+              <div class="section-info__details">
+                <h2>Now and then</h2>
+                <p>research study about New York</p>
+              </div>
             </div>
+
           </div>
+        </section>
+      </div>
 
-        </div>
-      </section>
+
 
     </main>
 

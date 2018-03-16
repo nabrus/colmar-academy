@@ -117,7 +117,7 @@ a {
 }
 
 .site-wrapper {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -149,23 +149,23 @@ a {
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 550px) {
 
   /*  section-info:
    Large screen layout  */
+
+   .section-info__box {
+     display: flex;
+     align-items: center;
+   }
 
   .section-info__img {
     width: 35%;
     margin: 1rem;
   }
 
-  .section-info__img img {
-    height: auto;
-  }
-
-  .section-info__box {
-    display: flex;
-    align-items: center;
+  .section-info__img--mirror {
+    order: 1;
   }
 
   .section-info__details {
@@ -173,6 +173,10 @@ a {
     width: 70%;
     padding-left: 0;
     text-align: left;
+  }
+
+  .section-info__details--mirror {
+    text-align: right;
   }
 }
 
@@ -183,6 +187,15 @@ a {
 
   .section-poster__text {
     padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .section-poster__text p {
+    padding: 1.5rem 0 2rem 0;
+  }
+
+  .section-poster__text span {
+    font-size: 0.77rem;
   }
 
   .section-info__wrapper {
@@ -204,18 +217,26 @@ a {
     padding: 2rem 1.5rem;
   }
 
-  .section-info__wrapper {
-
+  .section-poster__text {
+    text-align: left;
   }
 
   .section-info__box {
-    max-width: 100%;
+    max-width: 96%;
     margin: 0;
+  }
+
+  .section-info__img--mirror {
+    order: 0;
   }
 
   .section-info__details {
     padding: 0;
-    max-width: 47%;
+    max-width: 60%;
+  }
+
+  .section-info__details--mirror {
+    text-align: left;
   }
 }
 
@@ -374,7 +395,7 @@ header nav ul {
 
   /*  Larger screen layout  */
 
-  .banner {
+  .banner-container {
     display: flex;
     align-items: center;
   }
@@ -407,10 +428,6 @@ header nav ul {
   margin: 1rem 1rem 0 1rem;
 }
 
-/*.section-info__details p {
-  line-height: 1.3rem;
-} universal*/
-
 .section-info__img .desktop {
   display: none;
 }
@@ -419,7 +436,7 @@ header nav ul {
   display: none
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 550px) {
 
   /*  Larger screen layout  */
 
@@ -445,24 +462,6 @@ header nav ul {
   .campus .section-poster {
     display: block;
   }
-
-  .section-poster__text p {
-    /* padding: 2rem 0; */
-    /*line-height: 1.3rem; univeral line height*/
-  }
-
-  /* .section-poster__text p,
-  .section-poster__text span {
-    font-size: 1.3rem;
-  } */
-
-  /* .section-info__wrapper {
-    margin: 0 5rem;
-  } */
-
-  .section-info__details h2 {
-    /* font-size: 2rem; */
-  }
 }
 
 @media only screen and (min-width: 805px) {
@@ -481,13 +480,10 @@ header nav ul {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
-  .campus .section-poster__text p {
+  /* .campus .section-poster__text p {
     padding: 1.5rem 0 2rem 0;
-  }
+  } set earlier at univ 720px*/
 
-  .campus .section-poster__text span {
-    font-size: 0.77rem;
-  }
   .campus .section-info__wrapper {
     margin: 1rem 0 0 0;
     /* max-width: 40%; does nothing*/
@@ -526,12 +522,56 @@ header nav ul {
   display: none;
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 550px) {
+
+  .course-box__img,
+  .course-box__info {
+    display: block;
+  }
+
+  .courses {
+    background-color: rgb(201, 206, 216);
+    padding-bottom: 2rem;
+  }
+
+  .courses-wrapper {
+    max-width: 534px;
+    height: 946px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .course-box {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    width: 251px;
+    height: 294px;
+  }
+
+  .course-box h2 {
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  .course-box__info {
+    padding-left: 1rem;
+    width: 90%;
+  }
+
+  .course-box__info h3 {
+    padding: 0.5rem 0;
+  }
+}
+
+/* @media only screen and (min-width: 720px) { */
 
   /*  Change from course labels to a
   2 x 3 grid of couse cards  */
 
-  .course-box__img,
+  /* .course-box__img,
   .course-box__info {
     display: block;
   }
@@ -571,16 +611,16 @@ header nav ul {
   .course-box__info h3 {
     padding: 0.5rem 0;
   }
-}
+} */
 
-@media only screen and (min-width: 968px) {
+@media only screen and (min-width: 850px) {
 
   /*  Course card grid 3 x 2 change,
   desktop/tablet landscape layout  */
 
   .courses-wrapper {
-    max-width: 964px;
-    height: 670px;
+    max-width: 816px;
+    height: 620px;
   }
 }
 
@@ -695,7 +735,7 @@ footer span {
   }
 }
 
-@media only screen and (min-width: 968px) {
+@media only screen and (min-width: 960px) {
 
   /*  Desktop layout  */
 
