@@ -121,6 +121,14 @@ a {
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 1150px) {
+  .site-wrapper {
+    max-width: 1150px;
+  }
+}
+
+
+
 /*--  SECTION-INFO/POSTER  ==*/
 
 .section-info__details {
@@ -157,10 +165,11 @@ a {
    .section-info__box {
      display: flex;
      align-items: center;
+     max-width: 100%;
    }
 
   .section-info__img {
-    width: 35%;
+    width: 70%;
     margin: 1rem;
   }
 
@@ -173,6 +182,10 @@ a {
     width: 70%;
     padding-left: 0;
     text-align: left;
+  }
+
+  .section-info__wrapper {
+    margin: 1rem;
   }
 
   .section-info__details--mirror {
@@ -197,14 +210,10 @@ a {
   .section-poster__text span {
     font-size: 0.77rem;
   }
-
-  .section-info__wrapper {
-    margin: 0 5rem;
-  }
 }
 
 
-@media only screen and (min-width: 805px) {
+@media only screen and (min-width: 850px) {
 
   /*  section-poster/info:
   Tablet landscape, desktop layout  */
@@ -224,6 +233,10 @@ a {
   .section-info__box {
     max-width: 100%;
     margin: 0;
+  }
+
+  .section-info__img {
+    width: 35%;
   }
 
   .section-info__img--mirror {
@@ -259,6 +272,10 @@ header {
   display: none;
 }
 
+.tablet-logo {
+  display: none;
+}
+
 nav {
   height: 4rem;
   display: flex;
@@ -274,28 +291,44 @@ header nav ul {
   align-items: center;
 }
 
+
+
 @media only screen and (min-width: 720px) {
 
-  /*  Larger nav bar and icons
-  for tablets in portrait  */
+  /*  Nav bar layout for
+  tablets in portrait  */
 
   nav {
-    height: 5rem;
-  }
-
-  .mobile-nav li a img {
-    height: 45px;
-  }
-}
-
-@media only screen and (min-width: 805px) {
-
-  /*  Remove mobile, insert desktop; navigation  */
-
-  nav {
-    height: 4rem;
     padding: 0 1.5rem;
   }
+
+  .mobile-nav {
+    justify-content: flex-start;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .tablet-logo {
+    display: flex;
+    flex: 1;
+  }
+
+  .mobile-nav li a {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-nav__icons {
+    padding-left: 3rem;
+  }
+
+}
+
+@media only screen and (min-width: 850px) {
+
+  /*  Remove mobile, insert desktop; navigation  */
 
   .mobile-nav {
     display: none;
@@ -311,7 +344,7 @@ header nav ul {
     align-items: center;
   }
 
-  .logo {
+  .desktop-logo {
     flex: 1;
   }
 
@@ -320,7 +353,7 @@ header nav ul {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1150px) {
 
   /*  Always on-screen nav bar for desktop  */
 
@@ -330,6 +363,7 @@ header nav ul {
   }
 
   header {
+    background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
@@ -373,6 +407,7 @@ header nav ul {
 @media only screen and (min-width: 450px) {
   .banner-info {
     text-align: center;
+    max-width: 455px;
   }
 }
 
@@ -391,7 +426,7 @@ header nav ul {
   }
 }
 
-@media only screen and (min-width: 805px) {
+@media only screen and (min-width: 850px) {
 
   /*  Larger screen layout  */
 
@@ -438,14 +473,10 @@ header nav ul {
 
 @media only screen and (min-width: 550px) {
 
-  /*  Larger screen layout  */
+  /*  Larger screen layout !!!!!fix comment!!!!!!!!! */
 
-  .section-info__img .mobile {
-    display: none;
-  }
-
-  .section-info__img .desktop {
-    display: block;
+  .campus {
+    margin: 0;
   }
 }
 
@@ -454,7 +485,7 @@ header nav ul {
   /*  Display section-poster  */
 
   .campus {
-    margin: 0;
+    /* margin: 0; for new section, breaks other things later*/
     display: flex;
     flex-direction: column;
   }
@@ -464,12 +495,20 @@ header nav ul {
   }
 }
 
-@media only screen and (min-width: 805px) {
+@media only screen and (min-width: 850px) {
 
   /*  Tablet landscape, desktop layout  */
 
   .campus {
     flex-direction: row;
+  }
+
+  .section-info__img .mobile {
+    display: none;
+  }
+
+  .section-info__img .desktop {
+    display: block;
   }
 
   .campus .section-poster {
@@ -508,7 +547,7 @@ header nav ul {
 }
 
 .courses-wrapper {
-  margin: 2rem 1rem;
+  margin: 0 1rem 2rem 1rem;
 }
 
 .course-box {
@@ -654,7 +693,7 @@ header nav ul {
 
 h1.thesis-title {
   text-align: center;
-  padding: 1.5rem 0 2rem 0;
+  padding: 2rem 0;
 }
 
 .thesis {
@@ -677,9 +716,17 @@ h1.thesis-title {
   .thesis .section-info__box {
     display: flex;
   }
+
+  .thesis .section-info__img {
+    width: 35%;
+  }
+
+  .thesis .section-info__wrapper {
+    margin: 0 8rem;
+  }
 }
 
-@media only screen and (min-width: 805px) {
+@media only screen and (min-width: 850px) {
 
   /*  Desktop layout  */
 
@@ -717,7 +764,7 @@ footer>h4 {
   padding: 1rem 1.5rem;
 }
 
-footer span {
+footer a {
   display: none;
 }
 
@@ -725,7 +772,7 @@ footer span {
 
   /*  Tablet-portrait layout  */
 
-  footer span {
+  footer a {
     display: inline-block;
     float: right;
   }
