@@ -360,7 +360,7 @@ header nav ul {
 
   .desktop-nav__text a {
     font-weight: 500;
-    padding: 1.5rem 0.5rem;
+    padding: 1.6rem 0.5rem;
   }
 
   .desktop-nav__text a:hover {
@@ -394,6 +394,7 @@ header nav ul {
 
   .desktop-nav__text a {
     font-size: 1rem;
+    padding: 1.5rem 0.5rem;
   }
 }
 
@@ -580,8 +581,8 @@ header nav ul {
   }
 
   .campus .section-info__box:nth-of-type(2) {
-    border-top: 2px solid rgb(211, 219, 227);
-    border-bottom: 2px solid rgb(211, 219, 227);
+    border-top: 1px solid rgb(211, 219, 227);
+    border-bottom: 1px solid rgb(211, 219, 227);
   }
 }
 
@@ -817,8 +818,20 @@ footer a {
     font-size: 0.75rem;
   }
 
+  footer a:hover {
+    color: rgb(15, 32, 49);
+    /* text-decoration: underline; */
+    border-bottom: 1px solid rgb(15, 32, 49);
+  }
+
   .footer--space {
-    padding-left: .5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  footer {
+    border-top: 1px solid rgb(211, 219, 227);
   }
 }
 
