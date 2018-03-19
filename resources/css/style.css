@@ -15,15 +15,6 @@
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
-  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 500;
   src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -36,24 +27,6 @@
   font-weight: 600;
   src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-
-
-
-
-/* Testing this for starting project */
-* {
-/* background:rgba(0,0,0,.1); */
 }
 
 
@@ -70,10 +43,9 @@ html {
 }
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  /* color: rgb(169, 172, 179); */
-  color: rgb(123, 123, 123);
+  color: rgb(74, 107, 138);
 }
 
 *, *:before, *:after {
@@ -81,22 +53,17 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Poppins';
   font-weight: 600;
-  color: rgb(86, 89, 95);
+  color: rgb(15, 32, 49);
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 h2 {
   font-weight: 500;
   font-size: 1.1rem;
-}
-
-h3 {
-  /* font-size: 1.2rem; */
 }
 
 p {
@@ -112,6 +79,7 @@ video {
 
 a {
   text-decoration: none;
+  outline: none;
   color: inherit;
   font-size: 0.85rem;
 }
@@ -122,22 +90,46 @@ a {
 }
 
 @media only screen and (min-width: 1150px) {
+
+  /*  Larger viewport  */
+
   .site-wrapper {
     max-width: 1150px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.90rem;
+    line-height: 1.5rem;
+  }
+
+  a {
+    font-size: 0.95rem;
   }
 }
 
 
-
-/*--  SECTION-INFO/POSTER  ==*/
+/*--  SECTION-INFO/POSTER:
+campus-info/thesis sections  --*/
 
 .section-info__details {
   margin: 2rem 0;
-  /* padding: 0 3rem 0 1rem; */
+  padding: 0 3rem 0 1rem;
 }
 
 .section-info__details p {
   padding: 0.5rem 0;
+}
+
+.section-info__details span {
+  color: rgb(106, 126, 206);
 }
 
 @media only screen and (min-width: 450px) {
@@ -156,11 +148,10 @@ a {
   }
 }
 
-
 @media only screen and (min-width: 550px) {
 
   /*  section-info:
-   Large screen layout  */
+   Large mobile viewport layout  */
 
    .section-info__box {
      display: flex;
@@ -212,7 +203,6 @@ a {
   }
 }
 
-
 @media only screen and (min-width: 850px) {
 
   /*  section-poster/info:
@@ -253,8 +243,19 @@ a {
   }
 }
 
+@media only screen and (min-width: 960px) {
 
+  /*  Desktop link styling  */
 
+  .section-info__box:hover {
+    background-color: rgb(211, 219, 227);
+    transition: background 500ms ease-in;
+  }
+
+  .section-info__box:active {
+    background-color: rgb(150, 170, 245);
+  }
+}
 
 
 
@@ -264,21 +265,13 @@ a {
   #HEADER
 ---------------------------*/
 
-header {
-
+nav {
+  height: 4rem;
+  display: flex;
 }
 
 .desktop-nav {
   display: none;
-}
-
-.tablet-logo {
-  display: none;
-}
-
-nav {
-  height: 4rem;
-  display: flex;
 }
 
 .mobile-nav {
@@ -291,47 +284,25 @@ header nav ul {
   align-items: center;
 }
 
-
-
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 600px) {
 
   /*  Nav bar layout for
-  tablets in portrait  */
+  large mobile viewports  */
 
   nav {
     padding: 0 1.5rem;
   }
 
   .mobile-nav {
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 
   .mobile-logo {
     display: none;
   }
 
-  .tablet-logo {
-    display: flex;
-    flex: 1;
-  }
-
-  .mobile-nav li a {
-    display: flex;
-    align-items: center;
-  }
-
   .mobile-nav__icons {
     padding-left: 3rem;
-  }
-
-}
-
-@media only screen and (min-width: 850px) {
-
-  /*  Remove mobile, insert desktop; navigation  */
-
-  .mobile-nav {
-    display: none;
   }
 
   .desktop-nav {
@@ -339,23 +310,70 @@ header nav ul {
     display: flex;
   }
 
+  .desktop-logo a {
+    font-size: 1rem;
+  }
+
+  .desktop-logo a span {
+    font-weight: 600;
+    color: rgb(15, 32, 49);
+  }
+
+  .desktop-nav li:nth-of-type(1n + 2) {
+    display: none;
+  }
+
   .desktop-nav li a {
     display: flex;
     align-items: center;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+
+  /*  Remove mobile elements,
+   insert desktop viewport navigation  */
+
+   nav {
+     padding: 0 1rem 0 1.5rem;
+   }
+
+  .mobile-nav {
+    display: none;
   }
 
   .desktop-logo {
     flex: 1;
   }
 
-  .desktop-nav--spaceing {
-    padding-left:  1rem;
+  .desktop-logo img {
+    width: 2.5rem;
+  }
+
+  .desktop-logo a {
+    font-size: 1.3rem;
+  }
+
+  .desktop-nav li:nth-of-type(1n + 2) {
+    display: flex;
+  }
+
+  .desktop-nav__text a {
+    font-weight: 500;
+    padding: 1.6rem 0.5rem;
+  }
+
+  .desktop-nav__text a:hover {
+    background-color: rgb(15, 32, 49);
+    color: white;
+    text-decoration: underline;
+    transition: background 650ms linear;
   }
 }
 
 @media only screen and (min-width: 1150px) {
 
-  /*  Always on-screen nav bar for desktop  */
+  /*  Always on-screen nav bar for large viewports */
 
   body {
     position: relative;
@@ -368,7 +386,13 @@ header nav ul {
     top: 0;
     width: 100%;
   }
+
+  .desktop-nav__text a {
+    font-size: 1rem;
+  }
 }
+
+
 
 
 
@@ -377,44 +401,58 @@ header nav ul {
 ---------------------------*/
 
 .banner {
-  background-color: rgb(201, 206, 216);
+  background-color: rgb(74, 107, 138);
+  background-image: linear-gradient(to bottom, rgb(74, 107, 138), rgb(211, 219, 227));
 }
 
 .banner-info {
   padding: 2rem 1rem;
-  max-width: 375px;
+  max-width: 325px;
   margin: 0 auto;
 }
 
+.banner-info h1 {
+  line-height: 2rem;
+}
+
 .banner-info p {
-  color: rgb(86, 89, 98);
-  margin-top: 2rem;
+  color: rgb(15, 32, 49);
+  margin: 1rem 0 1.5rem 0;
   font-size: 1.2rem;
+  font-weight: 500;
   line-height: 1.7rem;
 }
 
 .banner-btn {
-  background-color: rgb(68, 84, 121);
+  background-color: rgb(15, 32, 49);
   color: white;
   display: block;
   font-size: 1.1rem;
-  margin-top: 1.5rem;
-  width: 100%;
   padding: .5rem 0;
   text-align: center;
+}
+
+.banner-btn:active {
+  color: rgb(15, 32, 49);
+  background-color: rgb(211, 219, 227);
 }
 
 @media only screen and (min-width: 450px) {
   .banner-info {
     text-align: center;
-    max-width: 455px;
+    max-width: 485px;
+  }
+
+  .banner-btn {
+    width: 65%;
+    margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 720px) {
 
   /*  Increase button size for
-  tablets in portrait  */
+  large mobile viewport  */
 
   .banner-info {
     max-width: 65%;
@@ -428,7 +466,7 @@ header nav ul {
 
 @media only screen and (min-width: 850px) {
 
-  /*  Larger screen layout  */
+  /*  Large viewport layout  */
 
   .banner-container {
     display: flex;
@@ -436,7 +474,7 @@ header nav ul {
   }
 
   .banner-info {
-    max-width: 375px;
+    max-width: 310px;
     margin: 0;
     text-align: left;
   }
@@ -446,11 +484,24 @@ header nav ul {
     max-width: 60%;
   }
 
+  .banner-info h1 {
+    font-size: 2rem;
+  }
+
   .banner-btn {
     padding: .5rem 0;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .banner-btn:hover {
+    box-shadow: 0 7px 9px rgba(42, 77, 110, 0.7);
+    transform: scale(1.1);
+    transition: all 300ms ease-in;
   }
 }
+
 
 
 
@@ -473,7 +524,7 @@ header nav ul {
 
 @media only screen and (min-width: 550px) {
 
-  /*  Larger screen layout !!!!!fix comment!!!!!!!!! */
+  /*  Adjustment to campus info spacing  */
 
   .campus {
     margin: 0;
@@ -485,7 +536,6 @@ header nav ul {
   /*  Display section-poster  */
 
   .campus {
-    /* margin: 0; for new section, breaks other things later*/
     display: flex;
     flex-direction: column;
   }
@@ -497,7 +547,8 @@ header nav ul {
 
 @media only screen and (min-width: 850px) {
 
-  /*  Tablet landscape, desktop layout  */
+  /*  Tablet landscape/desktop
+   viewport layout  */
 
   .campus {
     flex-direction: row;
@@ -512,27 +563,33 @@ header nav ul {
   }
 
   .campus .section-poster {
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid rgb(211, 219, 227);
   }
 
   .campus .section-poster__text {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
-  /* .campus .section-poster__text p {
-    padding: 1.5rem 0 2rem 0;
-  } set earlier at univ 720px*/
-
   .campus .section-info__wrapper {
     margin: 1rem 0 0 0;
-    /* max-width: 40%; does nothing*/
   }
 
   .campus .section-info__box:nth-of-type(2) {
-    border-top: 2px solid lightgrey;
-    border-bottom: 2px solid lightgrey;
+    border-top: 2px solid rgb(211, 219, 227);
+    border-bottom: 2px solid rgb(211, 219, 227);
   }
 }
+
+@media only screen and (min-width: 960px) {
+
+  /*  Desktop hyperlink styling  */
+
+  .campus .section-info__details span:hover {
+    font-size: 1rem;
+    border-bottom: 1px solid rgb(106, 126, 206);
+  }
+}
+
 
 
 
@@ -551,9 +608,12 @@ header nav ul {
 }
 
 .course-box {
-  background-color: rgb(201, 206, 216);
-  padding: 2rem 1rem;
+  background-color: rgb(114, 140, 166);
   margin-bottom: 0.5rem;
+}
+
+.course-box h2 {
+  padding: 2rem 1rem;
 }
 
 .course-box__img,
@@ -563,13 +623,17 @@ header nav ul {
 
 @media only screen and (min-width: 550px) {
 
+  /*  Hide course labels,
+  display 2 x 3 grid-course cards  */
+
   .course-box__img,
   .course-box__info {
     display: block;
   }
 
   .courses {
-    background-color: rgb(201, 206, 216);
+    background-color: rgb(211, 219, 227);
+    background-image: linear-gradient(to top, rgb(74, 107, 138), rgb(211, 219, 227));
     padding-bottom: 2rem;
   }
 
@@ -593,6 +657,7 @@ header nav ul {
 
   .course-box h2 {
     padding: 1rem 0 1rem 1rem;
+    color: inherit;
   }
 
   .course-box__info {
@@ -605,83 +670,52 @@ header nav ul {
   }
 }
 
-/* @media only screen and (min-width: 720px) { */
-
-  /*  Change from course labels to a
-  2 x 3 grid of couse cards  */
-
-  /* .course-box__img,
-  .course-box__info {
-    display: block;
-  }
-
-  .courses {
-    background-color: rgb(201, 206, 216);
-    padding-bottom: 2rem;
-  }
-
-  .courses-wrapper {
-    max-width: 632px;
-    height: 994px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-  }
-
-  .course-box {
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    width: 300px;
-    height: 310px;
-  }
-
-  .course-box h2 {
-    padding: 1rem 0 1rem 1rem;
-  }
-
-  .course-box__info {
-    padding-left: 1rem;
-    width: 90%;
-  }
-
-  .course-box__info h3 {
-    padding: 0.5rem 0;
-  }
-} */
-
 @media only screen and (min-width: 850px) {
 
-  /*  Course card grid 3 x 2 change,
+  /*  Display 3 x 2 grid-course cards,
   desktop/tablet landscape layout  */
 
   .courses-wrapper {
     max-width: 816px;
     height: 620px;
   }
+
+  .course-box__img:hover {
+    opacity: 0.75;
+  }
+
+  .course-box:hover {
+    color: white;
+    background-color: rgb(15, 32, 49);
+    box-shadow: 0 10px 12px rgba(42, 77, 110, 0.9);
+    transform: scale(1.1);
+    transition: all 550ms ease-in;
+  }
+
+  /* .course-box:hover {
+    transform: scale(1.1);
+    transition: all 550ms ease-in;
+  } alternative, to keep heading color consistant */
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1150px) {
 
-  /*  Large screen desktop layout  */
+  /*  Large desktop viewport layout  */
 
   .courses-wrapper {
-    max-width: 1056px;
-    height: 748px;
+    max-width: 1006px;
+    height: 718px;
   }
 
   .course-box {
-    width: 331px;
-    height: 358px;
+    width: 314px;
+    height: 343px;
   }
 
   .course-box__info p {
-    font-size:
+    font-size: 0.95rem;
   }
 }
-
 
 
 
@@ -728,7 +762,7 @@ h1.thesis-title {
 
 @media only screen and (min-width: 850px) {
 
-  /*  Desktop layout  */
+  /*  Desktop viewport layout  */
 
   .thesis {
     display: flex;
@@ -760,7 +794,7 @@ footer {
   background-color: white;
 }
 
-footer>h4 {
+footer h4 {
   padding: 1rem 1.5rem;
 }
 
@@ -770,11 +804,12 @@ footer a {
 
 @media only screen and (min-width: 600px) {
 
-  /*  Tablet-portrait layout  */
+  /*  Tablet portrait viewport layout  */
 
   footer a {
     display: inline-block;
     float: right;
+    font-size: 0.75rem;
   }
 
   .footer--space {
@@ -784,7 +819,7 @@ footer a {
 
 @media only screen and (min-width: 960px) {
 
-  /*  Desktop layout  */
+  /*  Desktop viewport layout  */
 
   footer {
     margin-bottom: 2.5rem;
