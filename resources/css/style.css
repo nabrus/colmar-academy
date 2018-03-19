@@ -360,7 +360,7 @@ header nav ul {
 
   .desktop-nav__text a {
     font-weight: 500;
-    padding: 1.6rem 0.5rem;
+    padding: 1.5rem 0.5rem;
   }
 
   .desktop-nav__text a:hover {
@@ -368,6 +368,11 @@ header nav ul {
     color: white;
     text-decoration: underline;
     transition: background 650ms linear;
+  }
+
+  .desktop-nav__text a:active {
+    color: rgb(15, 32, 49);
+    background-color: rgb(150, 170, 245);
   }
 }
 
@@ -692,10 +697,10 @@ header nav ul {
     transition: all 550ms ease-in;
   }
 
-  /* .course-box:hover {
-    transform: scale(1.1);
-    transition: all 550ms ease-in;
-  } alternative, to keep heading color consistant */
+  .course-box:active {
+    color: rgb(15, 32, 49);
+    background-color: rgb(150, 170, 245);
+  }
 }
 
 @media only screen and (min-width: 1150px) {
