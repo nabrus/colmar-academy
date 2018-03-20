@@ -71,8 +71,7 @@ p {
   line-height: 1.3rem;
 }
 
-img,
-video {
+img, video {
   max-width: 100%;
   height: auto;
 }
@@ -368,7 +367,7 @@ header nav ul {
 
   .desktop-nav__text a:hover {
     background-color: rgb(15, 32, 49);
-    color: white;
+    color: rgb(255, 255, 255);
     transition: all 550ms linear 75ms;
   }
 
@@ -389,7 +388,7 @@ header nav ul {
   }
 
   header {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     top: 0;
     width: 100%;
@@ -434,7 +433,7 @@ header nav ul {
 
 .banner-btn {
   background-color: rgb(15, 32, 49);
-  color: white;
+  color: rgb(255, 255, 255);
   display: block;
   font-size: 1.1rem;
   padding: .5rem 0;
@@ -533,7 +532,7 @@ header nav ul {
 
 @media only screen and (min-width: 550px) {
 
-  /*  Adjustment to campus info spacing  */
+  /*  Spacing adjustment: campus info  */
 
   .campus {
     margin: 0;
@@ -661,7 +660,7 @@ header nav ul {
   }
 
   .course-box {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 0;
     margin: 0;
     width: 251px;
@@ -698,7 +697,7 @@ header nav ul {
   }
 
   .course-box:hover {
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: rgb(15, 32, 49);
     box-shadow: 0 10px 12px rgba(42, 77, 110, 0.9);
     transform: scale(1.1);
@@ -805,7 +804,7 @@ h1.thesis-title {
 
 footer {
   font-size: 0.75rem;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 footer h4 {
