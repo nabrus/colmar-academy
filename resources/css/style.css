@@ -52,18 +52,18 @@ body {
   box-sizing: inherit;
 }
 
-h1, h2 {
-  font-weight: 600;
-  color: rgb(15, 32, 49);
-}
-
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 h2 {
   font-weight: 500;
   font-size: 1.1rem;
+}
+
+h1, h2 {
+  color: rgb(15, 32, 49);
 }
 
 p {
@@ -119,16 +119,16 @@ a {
 /*--  SECTION-INFO/POSTER:
 campus-info/thesis sections  --*/
 
-.section-info__details {
+.section-info__text {
   margin: 2rem 0;
   padding: 0 3rem 0 1rem;
 }
 
-.section-info__details p {
+.section-info__text p {
   padding: 0.5rem 0;
 }
 
-.section-info__details span {
+.section-info__text span {
   color: rgb(106, 126, 206);
 }
 
@@ -142,7 +142,7 @@ campus-info/thesis sections  --*/
     margin: 0 auto;
   }
 
-  .section-info__details {
+  .section-info__text {
     padding: 0;
     text-align: center;
   }
@@ -168,7 +168,7 @@ campus-info/thesis sections  --*/
     order: 1;
   }
 
-  .section-info__details {
+  .section-info__text {
     margin: 0;
     width: 70%;
     padding-left: 0;
@@ -179,7 +179,7 @@ campus-info/thesis sections  --*/
     margin: 1rem;
   }
 
-  .section-info__details--mirror {
+  .section-info__text--mirror {
     text-align: right;
   }
 }
@@ -233,23 +233,26 @@ campus-info/thesis sections  --*/
     order: 0;
   }
 
-  .section-info__details {
+  .section-info__text {
     padding: 0;
     width: 50%;
   }
 
-  .section-info__details--mirror {
+  .section-info__text--mirror {
     text-align: left;
   }
 }
 
 @media only screen and (min-width: 960px) {
 
-  /*  Desktop link styling  */
+  /*  Section-info:
+  desktop hyperlink styling  */
 
   .section-info__box:hover {
     background-color: rgb(211, 219, 227);
-    transition: background 500ms ease-in;
+    color: rgb(15, 32, 49);
+    text-decoration: underline;
+    transition: all 500ms ease-in;
   }
 
   .section-info__box:active {
@@ -366,8 +369,7 @@ header nav ul {
   .desktop-nav__text a:hover {
     background-color: rgb(15, 32, 49);
     color: white;
-    text-decoration: underline;
-    transition: background 650ms linear;
+    transition: all 550ms linear 75ms;
   }
 
   .desktop-nav__text a:active {
@@ -378,7 +380,8 @@ header nav ul {
 
 @media only screen and (min-width: 1150px) {
 
-  /*  Always on-screen nav bar for large viewports */
+  /*  Always on-screen nav bar
+  for large viewports */
 
   body {
     position: relative;
@@ -411,17 +414,17 @@ header nav ul {
   background-image: linear-gradient(to bottom, rgb(74, 107, 138), rgb(211, 219, 227));
 }
 
-.banner-info {
+.banner-text {
   padding: 2rem 1rem;
   max-width: 325px;
   margin: 0 auto;
 }
 
-.banner-info h1 {
+.banner-text h1 {
   line-height: 2rem;
 }
 
-.banner-info p {
+.banner-text p {
   color: rgb(15, 32, 49);
   margin: 1rem 0 1.5rem 0;
   font-size: 1.2rem;
@@ -444,9 +447,12 @@ header nav ul {
 }
 
 @media only screen and (min-width: 450px) {
-  .banner-info {
+
+  /*  Center text and button  */
+
+  .banner-text {
     text-align: center;
-    max-width: 485px;
+    max-width: 500px;
   }
 
   .banner-btn {
@@ -460,13 +466,10 @@ header nav ul {
   /*  Increase button size for
   large mobile viewport  */
 
-  .banner-info {
-    max-width: 65%;
-  }
-
   .banner-btn {
     padding: 1.5rem 0;
     font-size: 1.5rem;
+    width: 85%;
   }
 }
 
@@ -479,7 +482,7 @@ header nav ul {
     align-items: center;
   }
 
-  .banner-info {
+  .banner-text {
     max-width: 310px;
     margin: 0;
     text-align: left;
@@ -490,7 +493,7 @@ header nav ul {
     max-width: 60%;
   }
 
-  .banner-info h1 {
+  .banner-text h1 {
     font-size: 2rem;
   }
 
@@ -576,6 +579,10 @@ header nav ul {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
+  .campus .section-poster__text h1 {
+    font-size: 1.7rem; /* reduced to prevent text wrap */
+  }
+
   .campus .section-info__wrapper {
     margin: 1rem 0 0 0;
   }
@@ -586,13 +593,13 @@ header nav ul {
   }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1150px) {
 
-  /*  Desktop hyperlink styling  */
+  /*  Unify h1 headings
+  on large viewports  */
 
-  .campus .section-info__details span:hover {
-    font-size: 1rem;
-    border-bottom: 1px solid rgb(106, 126, 206);
+  .campus .section-poster__text h1 {
+    font-size: 2rem;
   }
 }
 
@@ -623,17 +630,17 @@ header nav ul {
 }
 
 .course-box__img,
-.course-box__info {
+.course-box__text {
   display: none;
 }
 
 @media only screen and (min-width: 550px) {
 
   /*  Hide course labels,
-  display 2 x 3 grid-course cards  */
+  display 2 x 3 grid: course cards  */
 
   .course-box__img,
-  .course-box__info {
+  .course-box__text {
     display: block;
   }
 
@@ -666,19 +673,19 @@ header nav ul {
     color: inherit;
   }
 
-  .course-box__info {
+  .course-box__text {
     padding-left: 1rem;
     width: 90%;
   }
 
-  .course-box__info h3 {
+  .course-box__text h3 {
     padding: 0.5rem 0;
   }
 }
 
 @media only screen and (min-width: 850px) {
 
-  /*  Display 3 x 2 grid-course cards,
+  /*  Display 3 x 2 grid: course cards,
   desktop/tablet landscape layout  */
 
   .courses-wrapper {
@@ -718,7 +725,7 @@ header nav ul {
     height: 343px;
   }
 
-  .course-box__info p {
+  .course-box__text p {
     font-size: 0.95rem;
   }
 }
@@ -747,7 +754,8 @@ h1.thesis-title {
 
 @media only screen and (min-width: 720px) {
 
-  /*  Display section poster/info  */
+  /*  Display section poster/info for
+  large mobile viewports  */
 
   .thesis .section-poster__text {
     display: block;
@@ -820,8 +828,8 @@ footer a {
 
   footer a:hover {
     color: rgb(15, 32, 49);
-    /* text-decoration: underline; */
     border-bottom: 1px solid rgb(15, 32, 49);
+    transition: all 1.2s linear 0.15s;
   }
 
   .footer--space {
@@ -830,6 +838,10 @@ footer a {
 }
 
 @media only screen and (min-width: 720px) {
+
+  /*  Add top border on
+  large mobile viewoports  */
+
   footer {
     border-top: 1px solid rgb(211, 219, 227);
   }
