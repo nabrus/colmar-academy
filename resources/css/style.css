@@ -739,7 +739,7 @@ header nav ul {
 
 h1.thesis-title {
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 0 1rem 0;
 }
 
 .thesis {
@@ -782,7 +782,7 @@ h1.thesis-title {
   }
 
   .thesis .section-poster__media {
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem 0 1.5rem;
   }
 
   .thesis .section-poster__text {
