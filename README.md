@@ -1,6 +1,6 @@
 # Capstone Project: Colmar Academy 
 
-[This landing page][1] for a fictional school, is my final project for the [Codecademy][1] Intensive Program - [**Build Websites from Scratch**][2] course. 
+[This landing page][1] for a fictional school, is my final project for the [Codecademy][2] Intensive Program - [**Build Websites from Scratch**][3] course. 
 
 ### The Project Task 
 
