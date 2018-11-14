@@ -4,8 +4,9 @@
 
 ### The Project Task 
 
-Build a responsive site for a new (fictional) school from scratch. Implementing it from the provided wireframes. Making all remaining design decisions - color, typography, etc. 
+Build a responsive site for a new (fictional) school from scratch. Implementing it from the provided [wireframe][4]. Making all remaining design decisions - color, typography, etc. 
 
 [1]: https://nabrus.github.io/colmar-academy  "Colmar Academy"
 [2]: https://www.codecademy.com  "codecademy"
 [3]: https://www.codecademy.com/pro/intensive/build-websites-from-scratch/ "Intensive course"
+[4]: resources/colmar-academy-spec.pdf "wireframe"
